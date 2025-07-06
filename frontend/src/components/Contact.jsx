@@ -8,6 +8,7 @@ import {
   Globe,
   Star,
   Download,
+  X,
 } from 'lucide-react';
 import resume from '../assets/Resume_2026.pdf';
 
@@ -54,12 +55,7 @@ const ContactSection = () => {
       value: "Pune, Maharashtra, India",
       link: "#"
     },
-    {
-      icon: <Globe className="w-6 h-6" />,
-      label: "Website",
-      value: "omdarshanshindepatil.com",
-      link: "https://omdarshanshindepatil.com"
-    }
+    
   ];
 
   const socialLinks = [
@@ -74,9 +70,9 @@ const ContactSection = () => {
       link: "https://github.com/Omdarshan-7001"
     },
     {
-      icon: <Globe className="w-6 h-6" />,
-      label: "Portfolio",
-      link: "https://omdarshanshindepatil.com"
+      icon: <X className="w-6 h-6" />,
+      label: "X",
+      link: "https://x.com/Omdarshan_jsx"
     }
   ];
 

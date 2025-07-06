@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { ChevronDown, Download, Mail, Github, Linkedin, X } from 'lucide-react';
 import profileImage from '../assets/profile.jpeg';
 import resume from '../assets/Resume_2026.pdf';
+
 // Mock portfolio data for testing
 const mockPortfolioData = {
   profile: {
@@ -177,6 +178,7 @@ const Hero = () => {
                 <X size={24} />
               </a>
             )}
+
           </div>
 
           {/* Scroll Indicator */}

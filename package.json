@@ -28,6 +28,7 @@
     "concurrently": "^8.2.2"
   },
   "dependencies": {
-    "express-rate-limit": "^6.10.0"
+    "express-rate-limit": "^6.10.0",
+    "react-icons": "^5.5.0"
   }
 }

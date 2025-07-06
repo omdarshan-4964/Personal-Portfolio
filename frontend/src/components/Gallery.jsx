@@ -6,6 +6,7 @@ import Evento from '../assets/Evento_SEM_III.jpg';
 import DAIMMP from '../assets/Projects_Images/DAIMMP.png';
 import Pionner_123 from '../assets/123.jpg';
 import Pioneer_2024 from '../assets/Pioneer_2024.jpg';
+import BDMS from '../assets/Projects_Images/BDMS.png';
 
 
 // Gallery Section Component
@@ -51,11 +52,11 @@ const GallerySection = () => {
     },
     {
       id: 5,
-      title: "Evento - Event Management System",
-      description: "Full-stack MERN application for event management",
-      date: "2023",
+      title: "Life-Link : Blood Donation Management System",
+      description: "Full-stack MERN application",
+      date: "2024",
       category: "Project",
-      image: Pionner_123,
+      image: BDMS,
       award: "💻 Development"
     },
     {
