@@ -67,7 +67,7 @@ const ContactSection = () => {
     {
       icon: <Github className="w-6 h-6" />,
       label: "GitHub",
-      link: "https://github.com/Omdarshan-7001"
+      link: "https://github.com/Omdarshan-4964"
     },
     {
       icon: <X className="w-6 h-6" />,
