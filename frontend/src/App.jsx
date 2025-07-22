@@ -1,5 +1,4 @@
-// src/App.jsx
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Navbar from './components/Navbar';
@@ -16,23 +15,33 @@ import { PortfolioProvider } from './context/PortfolioContext';
 import './App.css';
 
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+  }, [isMenuOpen]);
+
   return (
     <PortfolioProvider>
       <Router>
         <div className="App">
           <div className="fixed inset-0 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
             <div
-  className="absolute inset-0 opacity-20"
-  style={{
-    backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.03'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
-  }}
-></div>
-
+              className="absolute inset-0 opacity-20"
+              style={{
+                backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.03'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
+              }}
+            ></div>
             <div className="absolute inset-0 bg-gradient-to-t from-transparent via-cyan-500/5 to-transparent"></div>
           </div>
           
-          <div className="relative z-10">
-            <Navbar />
+          <Navbar isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} />
+          
+          <main className={`relative z-10 transition-opacity duration-300 ${isMenuOpen ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
             <Routes>
               <Route path="/" element={
                 <motion.div
@@ -52,7 +61,7 @@ function App() {
             </Routes>
             <Footer />
             <ScrollToTop />
-          </div>
+          </main>
         </div>
       </Router>
     </PortfolioProvider>

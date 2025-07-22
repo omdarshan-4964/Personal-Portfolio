@@ -24,7 +24,7 @@ export const PortfolioProvider = ({ children }) => {
       location: 'Pune, Maharashtra, India',
       website: 'omdarshanshindepatil.com',
       linkedin: 'omdarshanshindepatil',
-      github: 'Omdarshan-7001',
+      github: 'Omdarshan-4964',
       profileImage: null,
       resume: null,
       bio: `Aspiring Software Engineer specializing in Full Stack Web Development with hands-on experience in MERN stack and backend systems. Passionate about building scalable and secure applications, with growing expertise in DevOps and Machine Learning.`
