@@ -10,7 +10,7 @@ import {
   Download,
   X,
 } from 'lucide-react';
-import resume from '../assets/Resume_2026.pdf';
+import resume from '../assets/Omdarshan_Shindepatil_Resume.pdf';
 
 // Contact Section Component
 const ContactSection = () => {
